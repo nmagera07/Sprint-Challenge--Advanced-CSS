@@ -1,9 +1,11 @@
 // Navigation code here
 
 .nav {
-	height: 100px;
+    height: 100px;
+    width: 100%;
     background-color: @wild-sand;
     border: 2px solid @sea-shell;
+    
 	
 	.nav-all {
         display: flex;
@@ -13,17 +15,18 @@
         align-items: center;
         color: @river-bend;
 		h1 {
-            font-size: 4rem;
-            margin-top: 5px;
+            .nav-mixin();
+            &:hover {
+            .custom-animation-mixin();
+            
+        }
         }
 		
 	}
 
 	ul {
 		display: flex;
-        @media @phone {
-            margin-right: 20px;
-        }
+        
 		
 	}
 
@@ -34,8 +37,7 @@
 	}
 
 	a {
-		text-decoration: none;
-        color: black;
+		.nav-a-mixin();
         
     }
    

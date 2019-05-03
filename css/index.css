@@ -1,3 +1,15 @@
+.custom-animation-mixin {
+  transform: scale(1.5);
+  transition: 0.15s;
+}
+.nav-mixin {
+  font-size: 4rem;
+  margin-top: 5px;
+}
+.nav-a-mixin {
+  text-decoration: none;
+  color: #454A59;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,6 +174,7 @@ p {
 }
 .nav {
   height: 100px;
+  width: 100%;
   background-color: #F6F6F6;
   border: 2px solid #F1F1F1;
 }
@@ -177,13 +190,12 @@ p {
   font-size: 4rem;
   margin-top: 5px;
 }
+.nav .nav-all h1:hover {
+  transform: scale(1.5);
+  transition: 0.15s;
+}
 .nav ul {
   display: flex;
-}
-@media (max-width: 500px) {
-  .nav ul {
-    margin-right: 20px;
-  }
 }
 .nav li {
   margin: 10px 20px;
@@ -191,7 +203,7 @@ p {
 }
 .nav a {
   text-decoration: none;
-  color: black;
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -270,9 +282,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {
+    width: 125%;
     margin: 0 auto;
-    max-width: 800px;
-    width: 100%;
+    margin-left: -45px;
   }
 }
 .home .walk .walk-text h3 {
@@ -319,6 +331,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img img {
-    width: 100%;
+    width: 135%;
+    margin: 0 auto;
+    margin-left: -65px;
+    margin-bottom: 5%;
   }
 }
