@@ -5,7 +5,7 @@
     width: 100%;
     background-color: @wild-sand;
     border: 2px solid @sea-shell;
-    
+    opacity: 0.5;
 	
 	.nav-all {
         display: flex;
@@ -18,15 +18,20 @@
             .nav-mixin();
             &:hover {
             .custom-animation-mixin();
+        }
+        @media @phone {
             
         }
-        }
+        
 		
 	}
 
 	ul {
 		display: flex;
-        
+        @media @phone {
+            width: 110%;
+            
+        }
 		
 	}
 
@@ -42,5 +47,5 @@
     }
    
   
-
+    }
 }

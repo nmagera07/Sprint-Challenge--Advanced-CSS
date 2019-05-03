@@ -177,6 +177,7 @@ p {
   width: 100%;
   background-color: #F6F6F6;
   border: 2px solid #F1F1F1;
+  opacity: 0.5;
 }
 .nav .nav-all {
   display: flex;
@@ -194,14 +195,19 @@ p {
   transform: scale(1.5);
   transition: 0.15s;
 }
-.nav ul {
+.nav .nav-all ul {
   display: flex;
 }
-.nav li {
+@media (max-width: 500px) {
+  .nav .nav-all ul {
+    width: 110%;
+  }
+}
+.nav .nav-all li {
   margin: 10px 20px;
   font-size: 1.6em;
 }
-.nav a {
+.nav .nav-all a {
   text-decoration: none;
   color: #454A59;
 }
@@ -296,13 +302,13 @@ footer {
 .home .walk .walk-text .btn {
   background-color: #22283A;
   color: #F6F7F8;
-  width: 100px;
-  height: 40px;
   text-align: center;
   font-size: 1.75rem;
   border-radius: 5px;
   padding-top: 10px;
   font-weight: bold;
+  width: 100px;
+  height: 40px;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
