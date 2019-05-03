@@ -171,6 +171,8 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 100px;
 }
 .nav {
   height: 100px;
@@ -178,6 +180,8 @@ p {
   background-color: #F6F6F6;
   border: 2px solid #F1F1F1;
   opacity: 0.5;
+  position: fixed;
+  z-index: 1;
 }
 .nav .nav-all {
   display: flex;
