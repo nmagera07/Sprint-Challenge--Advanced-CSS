@@ -179,7 +179,7 @@ p {
   width: 100%;
   background-color: #F6F6F6;
   border: 2px solid #F1F1F1;
-  opacity: 0.5;
+  opacity: 0.7;
   position: fixed;
   z-index: 1;
 }
@@ -346,4 +346,22 @@ footer {
     margin-left: -65px;
     margin-bottom: 5%;
   }
+}
+.home .form-page {
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+.home .form-page h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+.home #name {
+  font-size: 1.25rem;
+}
+.home .email {
+  margin-top: 20px;
+}
+.home #email {
+  font-size: 1.25rem;
 }
